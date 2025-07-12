@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facebook – log in or sign up</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background: #f0f2f5;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      flex-direction: row;
+    }
+    .left {
+      margin-right: 50px;
+      max-width: 400px;
+    }
+    .left h1 {
+      color:black;
+      font-size: 60px;
+      margin-bottom: 0;
+    }
+    .left p {
+      font-size: 24px;
+    }
+    .login-box {
+      background: #fff;
+      padding: 20px;
+      width: 380px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .login-box input {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 14px;
+      background-color:black;
+      color: white;
+      font-size: 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .login-box a {
+      display: block;
+      text-align: center;
+      margin-top: 12px;
+      color:#1877f2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .divider {
+      height: 1px;
+      background: #dddfe2;
+      margin: 20px 0;
+    }
+    .create-btn {
+      background-color: #42b72a;
+    }
+
+    /* Mobile responsive styles */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .left {
+        margin: 0 0 30px 0;
+        text-align: center;
+      }
+      .left h1 {
+        font-size: 48px;
+      }
+      .left p {
+      	color:red;
+        font-size: 20px;
+      }
+      .login-box {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>LOGIN</h1>
+      <p>Please sign up or login and continue</p>
+    </div>
+    <div class="login-box">
+      <input type="email" id="email" placeholder="Email" required><br><br>
+    <input type="password" id="password" placeholder="Password" required><br><br>
+      <button>Log In</button>
+      <div class="divider"></div>
+      <button class="create-btn">Create New Account</button>
+    </div>
+  </div>
+</body>
+</html>
